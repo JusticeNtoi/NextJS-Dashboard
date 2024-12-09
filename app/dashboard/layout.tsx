@@ -3,7 +3,7 @@ import SideNav from '@/app/ui/dashboard/sidenav';
 // Implementing Partial Prerendering
 // export const experimental_ppr = true;
 
-export default function Layout({
+export default function Layout ({
     children
 }: { children: React.ReactNode }) {
     return (
@@ -12,7 +12,7 @@ export default function Layout({
                 <SideNav />
             </div>
             <div className="flex-grow p-6 md:overflow-y-auto md:p-12">
-                {children}
+                { children }
             </div>
         </div>
     );
